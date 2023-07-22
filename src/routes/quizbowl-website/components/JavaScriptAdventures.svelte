@@ -1,0 +1,14 @@
+<h2 class="text-2xl font-bold mt-8 mb-4" id="javascript">Adventures in JavaScript (January 2022)</h2>
+<section>
+  <p>In 2022, I took a class on fullstack web development. There were many independently-directed personal projects assigned with the class, which inspired me to bring back a project that I started in high school. In high school I was friends with an aspiring web developer, and he asked me if I could help him make a web app called the "Short Generator" that would generate a random short work of literature to read for quizbowl. I assembled a somewhat lengthy CSV file of short literature, complete with quizbowl metrics and links to the works in question. Unfortunately, that app never materialized.</p>
+
+  <img alt="Short Generator CSV file" class="m-8 mx-auto" id="short-generator" width="85%" height=auto src="../img/short-generator.png">
+
+  <p>Now that I had some JavaScript knowledge under my belt, I figured I could apply my new knowledge about HTML style to the site, and then I could go about implementing my "Short Generator". My big realization here was that you cannot manipulate a file on the client side through conventional methods. If I wanted my web app to work, I was going to have to set up some external location from where I could retrieve my data.</p>
+
+  <p>The file seemed too small to warrant a website, so I mounted it on an external website hosted through Netlify. You can download the file <a href="https://quizbowl-short-generator.netlify.app/short_generator_weighted.csv">here</a>. I then used a fetch request to pull down the data from the website. The fetch request was chained into a function that pulls a random entry from the table based on the frequency that the entry occurs in quizbowl.</p>
+
+  <p>After that, I used some client-side JavaScript to render what I wanted. I pulled down the row of data as an array, and then I used JavaScript to insert them into the HTML (using the old methods, like .getElementById() functions). I also used some CSS to style the page elements on click. This allowed user to get information about the work directly on the page. (You can still try out this feature by selecting "What Should I Read" on the website.)</p>
+  
+  <p>One challenge that I ran into was weird caching of the CSS and JavaScript files on the Apache server. After a site update, the new HTML would render immediately, but the new CSS and JavaScript wouldn't show up until some sort of refresh occured. To solve this problem, I decided to change the name of the files every time I reuploaded them (v2, v3, etc.): an imperfect solution, but it got the job done!</p>
+</section>
