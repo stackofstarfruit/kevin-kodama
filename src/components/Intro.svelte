@@ -4,7 +4,7 @@
   import ProfileDetails from './ProfileDetails.svelte'
 </script>
 
-<section id="bio" class="px-4 py-8 bg-blue-100 rounded-lg shadow-lg grid grid-cols-3 gap-4">
+<section id="bio" class="grid grid-cols-1 md:grid-cols-3 px-4 py-8 bg-blue-100 rounded-lg shadow-lg gap-4">
   <ContactCard />
   <Bio />
   <ProfileDetails />

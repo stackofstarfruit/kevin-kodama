@@ -9,7 +9,7 @@
   export let tools: Tool[] = [];
 </script>
 
-<div class="border border-blue-200 ml-8 mr-8 p-4 rounded transform transition-all duration-200 hover:scale-105 hover:shadow-lg flex flex-col md:flex-row justify-between items-center">
+<div class="border border-blue-200 ml-8 mr-8 p-4 rounded transform transition-all duration-200 hover:z-51 hover:scale-105 hover:shadow-lg flex flex-col md:flex-row justify-between items-center">
   <div class="w-full md:w-2/3">
     <h2 class="text-lg mb-2">
       {title}
@@ -17,9 +17,11 @@
     <p>
       {description}
     </p>
-    {#each tools as tool (tool.name)}
-      <a href={tool.link} class={`px-2 py-1 mr-3 rounded hover:text-white ${tool.color}`}>{tool.name}</a>
-    {/each}
+    <div class="flex flex-wrap" id="tools">
+      {#each tools as tool (tool.name)}
+        <a href={tool.link} class={`px-2 py-1 mr-3 rounded hover:text-white ${tool.color}`}>{tool.name}</a>
+      {/each}
+    </div>
   </div>
   <div class="relative w-full md:w-1/3 mt-4 md:mt-0 md:ml-4">
     <a href={projectLink}>

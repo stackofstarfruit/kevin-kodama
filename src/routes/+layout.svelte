@@ -11,7 +11,7 @@
 </svelte:head>
 
 <nav class="sticky z-10 top-0 w-full px-4 py-4 bg-blue-200 rounded-lg shadow-lg">
-  <ul class="flex justify-evenly space-x-8 text-lg font-medium">
+  <ul class="grid grid-cols-2 lg:grid-cols-4 gap-4 text-lg font-medium text-center">
     <li><a href="/" class="text-blue-600 hover:text-blue-700">Home</a></li>
     <li><a href="/popheads-chart" class="text-blue-600 hover:text-blue-700">Popheads Chart</a></li>
     <li><a href="/quizbowl-website" class="text-blue-600 hover:text-blue-700">Quizbowl Website</a></li>
