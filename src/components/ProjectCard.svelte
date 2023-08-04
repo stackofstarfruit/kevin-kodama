@@ -9,7 +9,7 @@
   export let tools: Tool[] = [];
 </script>
 
-<div class="border border-blue-200 ml-8 mr-8 p-4 rounded transform transition-all duration-200 hover:z-51 hover:scale-105 hover:shadow-lg flex flex-col md:flex-row justify-between items-center">
+<div class="relative border border-blue-200 ml-8 mr-8 mb-1 p-4 rounded transform transition-all duration-200 hover:z-51 hover:scale-105 hover:shadow-lg flex flex-col md:flex-row justify-between items-center">
   <div class="w-full md:w-2/3">
     <h2 class="text-lg mb-2">
       {title}
