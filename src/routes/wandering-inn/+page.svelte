@@ -20,7 +20,7 @@
     <p class="text-3xl text-center">LOADING PROJECT...</p>
   </div>
   {:else}
-  <embed id="new-site" class="border-solid border-black border-2 w-5/6 h-96 my-8 mx-auto" src="https://stackofstarfruit.shinyapps.io/Wandering_Inn_7/">
+  <iframe id="new-site" class="border-solid border-black border-2 w-5/6 h-96 my-8 mx-auto" title="Wandering Inn Visualization Preview" src="https://stackofstarfruit.shinyapps.io/Wandering_Inn_7/"></iframe>
   {/if}
 
   <article class="text-lg font-medium text-gray-700">

@@ -28,7 +28,7 @@
     <p class="text-3xl text-center">LOADING PROJECT...</p>
   </div>
   {:else}
-  <embed id="new-site" class="border-solid border-black border-2 w-5/6 h-96 my-8 mx-auto" src="http://students.washington.edu/quizbowl">
+  <iframe id="new-site" class="border-solid border-black border-2 w-5/6 h-96 my-8 mx-auto" title="Quizbowl Website Preview" src="https://students.washington.edu/quizbowl"></iframe>
   {/if}
 
   <article class="text-lg font-medium text-gray-700">

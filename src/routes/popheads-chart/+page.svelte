@@ -27,7 +27,7 @@
     <p class="text-3xl text-center">LOADING PROJECT...</p>
   </div>
   {:else}
-  <embed id="new-site" class="border-solid border-black border-2 w-5/6 h-96 my-8 mx-auto" src="https://popheads-chart-cs0o.onrender.com/">
+  <iframe id="new-site" class="border-solid border-black border-2 w-5/6 h-96 my-8 mx-auto" title="Popheads Chart Preview" src="https://popheads-chart-cs0o.onrender.com/"></iframe>
   {/if}
 
   <article class="text-lg font-medium text-gray-700">
