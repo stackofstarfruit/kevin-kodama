@@ -29,7 +29,7 @@
       { name: 'HTML', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
       { name: 'CSS', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS', color: 'bg-pink-100 text-pink-500 hover:bg-pink-500 hover:text-white' },
       { name: 'JavaScript', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', color: 'bg-yellow-100 text-yellow-500 hover:bg-yellow-500 hover:text-white' },
-      { name: 'Node.js', link: 'https://nodejs.org/en/docs/', color: 'bg-green-100 text-green-500 hover:bg-green-500 hover:text-white' },
+      { name: 'Apache Server', link: 'https://httpd.apache.org/', color: 'bg-red-100 text-red-500 hover:bg-red-500 hover:text-white' },
     ],
   };
 
@@ -41,11 +41,12 @@
     repoLink: 'https://github.com/stackofstarfruit/wandering-inn-vol-7',
     makingOfLink: './wandering-inn',
     tools: [
-      { name: 'R', link: 'https://developer.mozilla.org/en-US/docs/Web/HTML', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
-      { name: 'tidyverse', link: 'https://developer.mozilla.org/en-US/docs/Web/CSS', color: 'bg-pink-100 text-pink-500 hover:bg-pink-500 hover:text-white' },
-      { name: 'Shiny', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', color: 'bg-yellow-100 text-yellow-500 hover:bg-yellow-500 hover:text-white' },
-      { name: 'Plot.ly', link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript', color: 'bg-yellow-100 text-yellow-500 hover:bg-yellow-500 hover:text-white' },
-    ],
+      { name: 'R', link: 'https://www.r-project.org/', color: 'bg-blue-100 text-blue-700 hover:bg-blue-700 hover:text-white' },
+      { name: 'tidyverse', link: 'https://www.tidyverse.org/', color: 'bg-pink-100 text-pink-700 hover:bg-pink-700 hover:text-white' },
+      { name: 'Shiny', link: 'https://shiny.posit.co/', color: 'bg-yellow-100 text-yellow-700 hover:bg-yellow-700 hover:text-white' },
+      { name: 'Plot.ly', link: 'https://plotly.com/r/', color: 'bg-blue-100 text-blue-700 hover:bg-blue-700 hover:text-white' },
+      { name: 'ggplot2', link: 'https://ggplot2.tidyverse.org/', color: 'bg-gray-100 text-gray-700 hover:bg-gray-700 hover:text-white' },
+    ]
   };
 </script>
 

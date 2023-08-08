@@ -1,0 +1,20 @@
+<h2 class="text-2xl font-bold mt-8 mb-4" id="react-edition">React Edition (Winter 2022)</h2>
+<section>
+  <p class="mb-3">After taking a web dev class and spinning up a few React apps of my own, I finally had the tools I needed to make the Popheads Chart of my dreams. But if I wanted to do things right, I needed to rip everything up and start over.</p>
+
+  <p class="mb-3">My first task was setting up a proper web server. I decided to use create-react-app for my project, which is a starter kit that has all sorts of stuff for fullstack web development right out of the box. This made adding a Node.js server relatively straightforward. I also used Express.js to simplify the server-side code, with the intention of making a modern MERN stack application.</p>
+
+  <p class="mb-3">Now that I had server-side code, I could implement a proper database. MongoDB ended up being kind of a pain to work with, as I was only familiar with SQL databases up to that point. But the web client MongoDB Atlas was very user-friendly (shown below), as was the JavaScript wrapper library Mongoose. Using these tools, I was eventually able to get up to speed.</p>
+
+  <img class="mb-3" alt="MongoDB Atlas" src="./img/mongodb-atlas.png">
+
+  <p class="mb-3">The next step was ditching my web scraping approach. Web scraping wasn't just slow, it was unreliable, unstable, and just generally a bad practice for this sort of task. I looked into the Reddit API, and I came up with a cleaner solution that employed the snoowrap library. Working with the API made me realize that there was missing data and that I could probably use some help finding chart locations. So I reached out to the user in charge of the charts. He told me that there was actually a chart repository buried somewhere, so I didn't need to keep digging through his post history. This simplified the code a lot, so I could focus more on the business logic. He was also able to send over the missing chart files.</p>
+
+  <p class="mb-3">During this process, I ended up creating a bunch of middleware API endpoints to facilitate data transfer. Some of my endpoints were used to load data directly into the database, while others were used for the client to interact with the server.</p>
+
+  <p class="mb-3">Once all that was taken care of, I started designing my frontend. In the spirit of React, I decided to make my app a single-page application. I used the react-select library to make the dropdown menus, and I used those menus to toggle all the many page views on the site. I decided to use the modern CSS framework <a class="text-blue-600 hover:text-blue-700" href="https://tailwindcss.com">Tailwind</a>, which uses inline styling to simplify code. Since I had very few repeated styles, this was a perfect choice. I designed a simple pastel pink color scheme to match the theme of the subreddit, as well as some fancy bubble-shaped buttons.</p>
+
+  <p class="mb-3">One unique problem was the asynchronous code. Because of the reactive design, it was easy for users to confuse the React hooks by rapidly changing between views. I added an AbortController to handle this behavior, which kills simultaneous fetch requests if too many are made at once. I also added an update button, which made it so that I wouldn't have to go in and update the database for every release. With this new feature, clients could hit a button to trigger a script that ran if it found that the database was not up to date.</p>
+
+  <p class="mb-3">After finishing the Popheads Chart, I deployed it on <a class="text-blue-600 hover:text-blue-700" href="https://heroku.com/">Heroku</a>. I also posted it on the community Discord to positive reception. The chart worked for a while, but Heroku actually ended their free tier offering while the app was deployed. There were some additional kinks that needed to be worked out relating to changes in the charts, so the project again lay dormant for a while as I became busy with other things.</p>
+</section>

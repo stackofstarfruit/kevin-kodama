@@ -1,0 +1,10 @@
+<h2 class="text-2xl font-bold mt-8 mb-4" id="shiny-edition">Shiny Edition (Spring 2021)</h2>
+<section>
+  <p class="mb-3">After I made the <a class="text-blue-600 hover:text-blue-700" href="../wandering-inn">Wandering Inn Visualization</a>, I realized that I finally had the power of web development at my fingertips in the form of Shiny. Without too much effort, I could probably port the code over from Shiny and put something on the Internet. (Unfortunately, images of this version of the app are also lost to time.)</p>
+
+  <p class="mb-3">This proved to not be quite so simple. R is a very different language from Java, so I needed to update a lot of code to get it up and running. There had also been some minor changes to the chart formats, which forced me to update a lot of my parsing logic. These changes further demonstrated the unreliability of my web scraping approach.</p>
+
+  <p class="mb-3">The biggest problem that I had with Shiny is that it was super slow. It was slow at page load (Shiny apps take a long time to spin up), and it was also slow at the web scraping step. The lack of a true server side meant that I couldn't use a proper database, which meant that I still had to scrape all the data on the client side. All of this meant that the app had a user experience that worked, but it was very inconvenient.</p>
+
+  <p class="mb-3">The final nail in the coffin for the Shiny version of the app was the lack of customizability. While I had a lot of freedom regarding the charts that were displayed on the dashboard, there was very little I could do to update the UI or the feel of the page. I really wanted more granular control, and I ultimately didn't feel like this was something that I could upload to the Internet. So I decided to put the project on the backburner yet again until I learned more about web technology.</p>
+</section>

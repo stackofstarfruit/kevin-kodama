@@ -4,7 +4,6 @@
     import LandingPage from './components/LandingPage.svelte';
     import JavaScriptAdventures from './components/JavaScriptAdventures.svelte';
     import FleshingOutSite from './components/FleshingOutSite.svelte';
-    import DetailedClubHistory from './components/DetailedClubHistory.svelte';
     import ReactiveCSSFeatures from './components/ReactiveCSSFeatures.svelte';
     import Conclusion from './components/Conclusion.svelte';
 
@@ -22,7 +21,7 @@
 </svelte:head>
 
 <body class="bg-blue-50 text-blue-900 p-6">
-  <h1 class="text-4xl px-4 mt-10 mb-10">Quizbowl Website (Winter 2020 - Spring 2023)</h1>
+  <h1 class="text-4xl px-4 mt-10 mb-10" id="quizbowl-header">Quizbowl Website (Winter 2020 - Spring 2023)</h1>
 
   {#if loading}
   <div id="new-site-loading" class="border-solid border-black border-2 w-5/6 h-96 my-8 mx-auto flex items-center justify-center">
@@ -43,16 +42,10 @@
 
     <JavaScriptAdventures />
 
-    <p class="text-3xl text-center m-6">MORE INFO TO BE ADDED SOON...</p>
-
-    <!--
-
     <FleshingOutSite />
-
-    <DetailedClubHistory />
 
     <ReactiveCSSFeatures />
 
-    <Conclusion />-->
+    <Conclusion />
   </article>
 </body>

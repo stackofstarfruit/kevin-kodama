@@ -14,7 +14,7 @@
   <ProfileDetail 
     title="Blog"
     icons={[
-      { href: "https://synthpop.substack.com/", path: "/icons/substack.svg" }
+      { href: "https://synthpop.substack.com/", path: "/icons/synthpop.svg" }
     ]}
   />
   <ProfileDetail 
