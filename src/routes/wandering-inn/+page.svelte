@@ -32,7 +32,7 @@
 
     <p class="mb-3">This isn't to say that the process was entirely without snags. One issue was the sheer size of the text. I initially just scanned directly from the text on the client side within the app. But this quickly turned out to be a bad idea, and it was a good demonstration of why databases are necessary. I ended up storing the text in a big spreadsheet, but I would definitely store it in a database if I was doing the project over again.</p>
 
-    <p class="mb-3">Most of my page views are just straightforward Plotly visualizations that use Shiny to inject the chart with fields. One view that goes beyond this is the Chapters by Date page, which visualizes the word count in calendar format. I achieved this by introducing a special ggplot2 calendar theme.</p>
+    <p class="mb-3">Most of my page views are just straightforward <a class="text-blue-600 hover:text-blue-700" href="https://plotly.com/r/">Plotly</a> visualizations that use Shiny to inject the chart with fields. One view that goes beyond this is the Chapters by Date page, which visualizes the word count in calendar format. I achieved this by introducing a special <a class="text-blue-600 hover:text-blue-700" href="https://ggplot2.tidyverse.org/">ggplot2</a> calendar theme.</p>
 
     <p class="mb-3">In the end, this was the first coding project I was able to post publicly in its finished form. It felt great to ship something so quickly, which inspired me to take on more personal projects. While this particular project didn't teach me too much on the technical side, it did wonders for my imposter syndrome and motivated me to learn more about the world of web development.</p>
 
