@@ -20,7 +20,8 @@
 </svelte:head>
 
 <body class="bg-blue-50 text-blue-900 p-6">
-  <h1 class="text-4xl px-4 mt-10 mb-10">Popheads Chart (Summer 2020 - Summer 2023)</h1>
+  <h1 class="text-4xl px-4 mt-10 mb-5">Popheads Chart (Summer 2020 - Summer 2023)</h1>
+  <p class="ml-4">(takes a while to load the first time, click the link <u><a href="https://popheads-chart-cs0o.onrender.com/">here</a></u> for easier browsing)</p>
 
   {#if loading}
   <div id="new-site-loading" class="border-solid border-black border-2 w-5/6 h-96 my-8 mx-auto flex items-center justify-center">

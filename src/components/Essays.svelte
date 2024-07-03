@@ -9,12 +9,12 @@
       <Essay 
         title="Was 'Radical Optimism' a Flop?"
         link="https://synthpop.substack.com/p/was-radical-optimism-a-flop"
-        description="In which I explore the meaning of the term 'flop', and I explain how pop music fanbases are like snowballs."
+        description="In which I explain how pop music fanbases are like snowballs"
       />
       <Essay 
         title="On Spotify, *YOU* Are the Genre"
         link="https://synthpop.substack.com/p/on-spotify-you-are-the-genre"
-        description="How Spotify and algorithmic discovery is causing music genres to break down."
+        description="How the Spotify algorithm is causing music genres to break down"
       />
       <Essay 
         title="The Rise, Fall, and Return of Future Nostalgia"
