@@ -513,6 +513,33 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
+  )} ${validate_component(EssayCard, "EssayCard").$$render(
+    $$result,
+    {
+      title: "Great Eras: The Rise, Fall, and Rebirth of Future Nostalgia",
+      link: "https://synthpop.substack.com/p/great-eras-the-rise-fall-and-rebirth",
+      description: "It’s been three years since the release of Future Nostalgia, the album that put Dua Lipa on top of the pop world. Future Nostalgia was the soundtrack of quarantine for many, and it was widely considered one of the best albums of the new decade. Despite Future Nostalgia’s staying power, it didn’t do opening numbers like you might expect. In fact, the album netted zero number ones (yes, even the 2021 year-end chart topper “Levitating”). And the album itself didn’t do great numbers either — it peaked at #3 in the US and didn’t even debut at #1 in the UK.",
+      image: "/img/nostalgia.webp",
+      tools: [
+        {
+          name: "dua-lipa",
+          link: "",
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
+        },
+        {
+          name: "pop-music",
+          link: "",
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
+        },
+        {
+          name: "fandom",
+          link: "",
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
+        }
+      ]
+    },
+    {},
+    {}
   )}</section>`;
 });
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
