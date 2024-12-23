@@ -1,9 +1,9 @@
 import { c as create_ssr_component, e as escape, d as each, f as add_attribute, v as validate_component } from "../../chunks/ssr.js";
 const ContactCard = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<div id="propic" class="flex flex-col items-center justify-center" data-svelte-h="svelte-bsrf34"><h1 class="text-3xl mb-3">Kevin Kodama</h1> <img alt="Kevin Kodama" src="/img/profile.jpeg" class="w-24 h-24 rounded-full shadow border-2 border-blue-300 mb-4"> <div id="contact-icons" class="space-x-4 text-2xl"><a href="mailto:kevin.kodama@protonmail.com" class="text-blue-500 hover:text-blue-700"><i class="fa fa-envelope"></i></a> <a href="https://linkedin.com/in/kevin-kodama" target="_blank" class="text-blue-500 hover:text-blue-700"><i class="fa fa-linkedin"></i></a> <a href="https://github.com/stackofstarfruit" target="_blank" class="text-blue-500 hover:text-blue-700"><i class="fa fa-github"></i></a></div></div>`;
+  return `<div id="propic" class="flex flex-col items-center justify-center" data-svelte-h="svelte-1kzp4t3"><h1 class="text-3xl mb-3">Kevin Kodama</h1> <img alt="Kevin Kodama" src="/img/profile.jpeg" class="w-24 h-24 rounded-full shadow border-2 border-blue-300 mb-4"> <div id="contact-icons" class="space-x-4 text-2xl"><a href="mailto:hello@kevinkodama.com" class="text-blue-500 hover:text-blue-700"><i class="fa fa-envelope"></i></a> <a href="https://linkedin.com/in/kevin-kodama" target="_blank" class="text-blue-500 hover:text-blue-700"><i class="fa fa-linkedin"></i></a> <a href="https://github.com/stackofstarfruit" target="_blank" class="text-blue-500 hover:text-blue-700"><i class="fa fa-github"></i></a></div></div>`;
 });
 const Bio = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<div class="flex flex-col justify-center" data-svelte-h="svelte-fnrfnc"><p class="text-base md:text-lg font-medium text-gray-700">Hi! I am Kevin Kodama, a software engineer and writer seeking new ways to explain big ideas. My latest project is a sci-fi &amp; fantasy magazine called <a class="text-blue-600" href="https://linktr.ee/synthesized.sunsets">Synthesized Sunsets</a>, which explores speculative topics through a romantic lens. Feel free to reach out and send me an email at kevin.kodama (at) protonmail.com!</p></div>`;
+  return `<div class="flex flex-col justify-center" data-svelte-h="svelte-16i1drn"><p class="text-base md:text-lg font-medium text-gray-700">Hi! I am Kevin Kodama, a software engineer and writer seeking new ways to explain big ideas. I love to write about web dev, pop music, and human connection! My latest project is a sci-fi &amp; fantasy magazine called <a class="text-blue-600" href="https://linktr.ee/synthesized.sunsets">Synthesized Sunsets</a>, which explores speculative topics through a romantic lens. Feel free to reach out— shoot me an email at <a class="text-blue-600" href="mailto:hello@kevinkodama.com">hello@kevinkodama.com!</a></p></div>`;
 });
 const ProfileDetail = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { title } = $$props;
@@ -69,7 +69,7 @@ const ProfileDetails = create_ssr_component(($$result, $$props, $$bindings, slot
   )}</div>`;
 });
 const Intro = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<section id="bio" class="grid grid-cols-1 md:grid-cols-3 px-4 py-8 bg-blue-100 rounded-lg shadow-lg gap-4">${validate_component(ContactCard, "ContactCard").$$render($$result, {}, {}, {})} ${validate_component(Bio, "Bio").$$render($$result, {}, {}, {})} ${validate_component(ProfileDetails, "ProfileDetails").$$render($$result, {}, {}, {})}</section>`;
+  return `<section id="intro" class="grid grid-cols-1 md:grid-cols-3 px-4 py-8 bg-blue-100 rounded-lg shadow-lg gap-4">${validate_component(ContactCard, "ContactCard").$$render($$result, {}, {}, {})} ${validate_component(Bio, "Bio").$$render($$result, {}, {}, {})} ${validate_component(ProfileDetails, "ProfileDetails").$$render($$result, {}, {}, {})}</section>`;
 });
 const ProjectCard = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { title } = $$props;
@@ -269,8 +269,8 @@ const EssayCard = create_ssr_component(($$result, $$props, $$bindings, slots) =>
     return `<a${add_attribute("href", tool.link, 0)}${add_attribute("class", `px-2 py-1 mr-3 rounded hover:text-white ${tool.color}`, 0)}>${escape(tool.name)}</a>`;
   })}</div></div> <div class="relative w-full md:w-1/3 mt-4 md:mt-0 md:ml-4"><a${add_attribute("href", link, 0)}><img${add_attribute("src", image, 0)}${add_attribute("alt", title, 0)} class="rounded-lg w-full h-auto transition-opacity duration-200 hover:opacity-50"></a></div></div></a>`;
 });
-const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<h2 id="essays" class="text-3xl px-4 mt-10 text-center" data-svelte-h="svelte-1v4hiez">Essays</h2> <section class="px-4 py-8 space-y-4">${validate_component(EssayCard, "EssayCard").$$render(
+const SynthesizedSunsets = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `<h2 id="synthesized-sunsets" class="text-3xl px-4 mt-10 text-center" data-svelte-h="svelte-1erlx7s">Synthesized Sunsets</h2> <section class="px-4 py-8 space-y-4">${validate_component(EssayCard, "EssayCard").$$render(
     $$result,
     {
       title: "Will Science Fiction Ever Be Literary?",
@@ -459,6 +459,36 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
+  )}</section>`;
+});
+const OtherEssays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  return `<h2 id="other-essays" class="text-3xl px-4 mt-10 text-center" data-svelte-h="svelte-1uzfrzs">Other Essays</h2> <section class="px-4 py-8 space-y-4">${validate_component(EssayCard, "EssayCard").$$render(
+    $$result,
+    {
+      title: "IBS: How Capitalism Cooked Up a Whole New Disease (Part 1 of 2)",
+      link: "https://kevinkodama.substack.com/p/ibs-how-capitalism-cooked-up-a-whole",
+      description: "As America became wealthier, companies realized that it wasn’t enough to sell goods that people needed. They also needed to create that need. When it came to food, this was no easy task. After all, people had been eating similar diets for hundreds of years, and this had been working out well for them. The solution to this problem was selling not just a food product but an entire lifestyle. Will Kellogg was the first to take advantage of this strategy. Kellogg’s brother John, a famous physician who pioneered the science of wellness, was obsessed with the idea of “biologic living”, or the idea that scientific optimization could radically alter the human condition for the better. While many of John Kellogg’s ideas feel eccentric now, the essence of his lifestyle is alive and well. Will’s genius was realizing the potential of selling his brother’s science of nutrition with the science of marketing.",
+      image: "/img/ibs.webp",
+      tools: [
+        {
+          name: "sociology",
+          link: "",
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
+        },
+        {
+          name: "capitalism",
+          link: "",
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
+        },
+        {
+          name: "biology",
+          link: "",
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
+        }
+      ]
+    },
+    {},
+    {}
   )} ${validate_component(EssayCard, "EssayCard").$$render(
     $$result,
     {
@@ -543,7 +573,7 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   )}</section>`;
 });
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${$$result.head += `<!-- HEAD_svelte-tmtjdd_START -->${$$result.title = `<title>Kevin Kodama</title>`, ""}<!-- HEAD_svelte-tmtjdd_END -->`, ""} <body class="bg-blue-50 text-blue-900">${validate_component(Intro, "Intro").$$render($$result, {}, {}, {})} ${validate_component(Projects, "Projects").$$render($$result, {}, {}, {})} ${validate_component(Essays, "Essays").$$render($$result, {}, {}, {})} <p class="m-3" data-svelte-h="svelte-yksaaf">This website was built with <a href="https://kit.svelte.dev/">SvelteKit</a>, <a href="https://tailwindcss.com/">Tailwind CSS</a>, and <a href="https://www.typescriptlang.org/">TypeScript</a>.</p></body>`;
+  return `${$$result.head += `<!-- HEAD_svelte-tmtjdd_START -->${$$result.title = `<title>Kevin Kodama</title>`, ""}<!-- HEAD_svelte-tmtjdd_END -->`, ""} <body class="bg-blue-50 text-blue-900 scroll-smooth">${validate_component(Intro, "Intro").$$render($$result, {}, {}, {})} ${validate_component(Projects, "Projects").$$render($$result, {}, {}, {})} ${validate_component(SynthesizedSunsets, "SynthesizedSunsets").$$render($$result, {}, {}, {})} ${validate_component(OtherEssays, "OtherEssays").$$render($$result, {}, {}, {})} <div id="end" data-svelte-h="svelte-1valvq5"><p class="m-3">This website was built with <a href="https://kit.svelte.dev/">SvelteKit</a>, <a href="https://tailwindcss.com/">Tailwind CSS</a>, and <a href="https://www.typescriptlang.org/">TypeScript</a>.</p></div></body>`;
 });
 export {
   Page as default
