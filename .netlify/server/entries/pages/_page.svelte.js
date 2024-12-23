@@ -249,7 +249,7 @@ const Projects = create_ssr_component(($$result, $$props, $$bindings, slots) => 
     {}
   )}</a></section>`;
 });
-const Essay = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+const EssayCard = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { title } = $$props;
   let { description } = $$props;
   let { link } = $$props;
@@ -265,12 +265,12 @@ const Essay = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.image(image);
   if ($$props.tools === void 0 && $$bindings.tools && tools !== void 0)
     $$bindings.tools(tools);
-  return `<div class="relative border border-blue-200 ml-8 mr-8 mb-1 p-4 rounded transform transition-all duration-200 hover:z-51 hover:scale-105 hover:shadow-lg flex flex-col md:flex-row justify-between items-center"><div class="w-full md:w-2/3"><h2 class="text-lg mb-2">${escape(title)}</h2> <p class="mb-2">&quot;${escape(description)}&quot;</p> <p data-svelte-h="svelte-1k7kqub">Click the image on the right to continue reading!</p> <div class="flex flex-wrap" id="tools">${each(tools, (tool) => {
+  return `<a${add_attribute("href", link, 0)}><div class="relative border border-blue-200 ml-8 mr-8 mb-1 p-4 rounded transform transition-all duration-200 hover:z-51 hover:scale-105 hover:shadow-lg flex flex-col md:flex-row justify-between items-center"><div class="w-full md:w-2/3"><h2 class="text-lg mb-2">${escape(title)}</h2> <p class="mb-2">&quot;${escape(description)}&quot;</p> <p class="mb-2" data-svelte-h="svelte-14hzdqs">Click to continue reading!</p> <div class="flex flex-wrap" id="tools">${each(tools, (tool) => {
     return `<a${add_attribute("href", tool.link, 0)}${add_attribute("class", `px-2 py-1 mr-3 rounded hover:text-white ${tool.color}`, 0)}>${escape(tool.name)}</a>`;
-  })}</div></div> <div class="relative w-full md:w-1/3 mt-4 md:mt-0 md:ml-4"><a${add_attribute("href", link, 0)}><img${add_attribute("src", image, 0)}${add_attribute("alt", title, 0)} class="rounded-lg w-full h-auto transition-opacity duration-200 hover:opacity-50"></a></div></div>`;
+  })}</div></div> <div class="relative w-full md:w-1/3 mt-4 md:mt-0 md:ml-4"><a${add_attribute("href", link, 0)}><img${add_attribute("src", image, 0)}${add_attribute("alt", title, 0)} class="rounded-lg w-full h-auto transition-opacity duration-200 hover:opacity-50"></a></div></div></a>`;
 });
 const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<h2 id="essays" class="text-3xl px-4 mt-10 text-center" data-svelte-h="svelte-1v4hiez">Essays</h2> <section class="px-4 py-8 space-y-4">${validate_component(Essay, "Essay").$$render(
+  return `<h2 id="essays" class="text-3xl px-4 mt-10 text-center" data-svelte-h="svelte-1v4hiez">Essays</h2> <section class="px-4 py-8 space-y-4">${validate_component(EssayCard, "EssayCard").$$render(
     $$result,
     {
       title: "Will Science Fiction Ever Be Literary?",
@@ -297,7 +297,7 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} ${validate_component(Essay, "Essay").$$render(
+  )} ${validate_component(EssayCard, "EssayCard").$$render(
     $$result,
     {
       title: "In Caroline M. Yoachim's Fragile Worlds, Acts of Care Take Center Stage",
@@ -324,7 +324,7 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} ${validate_component(Essay, "Essay").$$render(
+  )} ${validate_component(EssayCard, "EssayCard").$$render(
     $$result,
     {
       title: "'Grand Nostalgia' and the Temporal Injustice of 'Castle in the Sky'",
@@ -351,7 +351,7 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} ${validate_component(Essay, "Essay").$$render(
+  )} ${validate_component(EssayCard, "EssayCard").$$render(
     $$result,
     {
       title: "Beaches of Rebirth and Memory",
@@ -378,7 +378,7 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} ${validate_component(Essay, "Essay").$$render(
+  )} ${validate_component(EssayCard, "EssayCard").$$render(
     $$result,
     {
       title: "Ships Create the Rhythm of Adventure",
@@ -405,7 +405,7 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} ${validate_component(Essay, "Essay").$$render(
+  )} ${validate_component(EssayCard, "EssayCard").$$render(
     $$result,
     {
       title: "Dissonance and Danger in 'The Princess and the Clock'",
@@ -432,7 +432,7 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} ${validate_component(Essay, "Essay").$$render(
+  )} ${validate_component(EssayCard, "EssayCard").$$render(
     $$result,
     {
       title: "'The Wandering Inn' Allows Us to Properly Fear the Sea",
@@ -459,7 +459,7 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} ${validate_component(Essay, "Essay").$$render(
+  )} ${validate_component(EssayCard, "EssayCard").$$render(
     $$result,
     {
       title: "Was 'Radical Optimism' a Flop?",
@@ -486,7 +486,7 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )} ${validate_component(Essay, "Essay").$$render(
+  )} ${validate_component(EssayCard, "EssayCard").$$render(
     $$result,
     {
       title: "On Spotify, *YOU* Are the Genre",
