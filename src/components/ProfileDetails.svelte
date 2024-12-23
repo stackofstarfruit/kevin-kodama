@@ -12,9 +12,9 @@
     contents="Seattle, WA"
   />
   <ProfileDetail 
-    title="Blog"
+    title="Magazine"
     icons={[
-      { href: "https://synthpop.substack.com/", path: "/icons/synthpop.svg" }
+      { href: "https://synthesizedsunsets.substack.com/", path: "/icons/synthpop.svg" }
     ]}
   />
   <ProfileDetail 

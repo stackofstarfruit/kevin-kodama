@@ -50,7 +50,7 @@
   };
 </script>
 
-<h2 id="projects" class="text-3xl px-4 mt-10">Projects</h2>
+<h2 id="projects" class="text-3xl px-4 mt-10 text-center">Projects</h2>
 <section id="gallery" class="px-4 py-8 space-y-4">
   <a href="/popheads-chart">
   <ProjectCard 

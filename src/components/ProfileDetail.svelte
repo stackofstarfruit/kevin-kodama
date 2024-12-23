@@ -8,7 +8,7 @@
 
 <div class="w-full md:w-1/2 p-2">
   <div class="flex flex-col justify-center items-center">
-    <h3 class="text-blue-600 mt-6 text-lg font-semibold">{title}</h3>
+    <h3 class="mt-6 text-lg font-semibold">{title}</h3>
     {#if icons.length}
       <div id="resume-icons" class="flex space-x-4 text-3xl mb-4">
         {#each icons as icon (icon.href)}
