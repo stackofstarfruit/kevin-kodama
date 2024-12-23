@@ -265,7 +265,7 @@ const Essay = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.image(image);
   if ($$props.tools === void 0 && $$bindings.tools && tools !== void 0)
     $$bindings.tools(tools);
-  return `<div class="relative border border-blue-200 ml-8 mr-8 mb-1 p-4 rounded transform transition-all duration-200 hover:z-51 hover:scale-105 hover:shadow-lg flex flex-col md:flex-row justify-between items-center"><div class="w-full md:w-2/3"><h2 class="text-lg mb-2">${escape(title)}</h2> <p class="mb-2">&quot;${escape(description)}&quot;</p> <p data-svelte-h="svelte-vqgc2n">Click to continue reading!</p> <div class="flex flex-wrap" id="tools">${each(tools, (tool) => {
+  return `<div class="relative border border-blue-200 ml-8 mr-8 mb-1 p-4 rounded transform transition-all duration-200 hover:z-51 hover:scale-105 hover:shadow-lg flex flex-col md:flex-row justify-between items-center"><div class="w-full md:w-2/3"><h2 class="text-lg mb-2">${escape(title)}</h2> <p class="mb-2">&quot;${escape(description)}&quot;</p> <p data-svelte-h="svelte-1k7kqub">Click the image on the right to continue reading!</p> <div class="flex flex-wrap" id="tools">${each(tools, (tool) => {
     return `<a${add_attribute("href", tool.link, 0)}${add_attribute("class", `px-2 py-1 mr-3 rounded hover:text-white ${tool.color}`, 0)}>${escape(tool.name)}</a>`;
   })}</div></div> <div class="relative w-full md:w-1/3 mt-4 md:mt-0 md:ml-4"><a${add_attribute("href", link, 0)}><img${add_attribute("src", image, 0)}${add_attribute("alt", title, 0)} class="rounded-lg w-full h-auto transition-opacity duration-200 hover:opacity-50"></a></div></div>`;
 });
@@ -281,17 +281,17 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           name: "science-fiction",
           link: "",
-          color: "bg-green-100 text-green-500 hover:bg-green-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         },
         {
           name: "literary-fiction",
           link: "",
-          color: "bg-purple-100 text-orange-500 hover:bg-purple-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         },
         {
           name: "genre",
           link: "",
-          color: "bg-purple-100 text-yellow-500 hover:bg-purple-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         }
       ]
     },
@@ -308,17 +308,17 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           name: "caroline-m-yoachim",
           link: "",
-          color: "bg-green-100 text-purple-800 hover:bg-green-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         },
         {
           name: "fantasy",
           link: "",
-          color: "bg-purple-100 text-purple-500 hover:bg-purple-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         },
         {
           name: "motherhood",
           link: "",
-          color: "bg-purple-100 text-red-500 hover:bg-purple-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         }
       ]
     },
@@ -335,17 +335,17 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           name: "nostalgia",
           link: "",
-          color: "bg-green-100 text-purple-100 hover:bg-green-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         },
         {
           name: "civilization",
           link: "",
-          color: "bg-purple-100 text-purple-600 hover:bg-purple-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         },
         {
           name: "miyazaki",
           link: "",
-          color: "bg-purple-100 text-purple-700 hover:bg-purple-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         }
       ]
     },
@@ -362,17 +362,17 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           name: "memory",
           link: "",
-          color: "bg-green-100 text-purple-300 hover:bg-green-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         },
         {
           name: "dreams",
           link: "",
-          color: "bg-purple-100 text-purple-400 hover:bg-purple-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         },
         {
           name: "pokemon",
           link: "",
-          color: "bg-purple-100 text-purple-200 hover:bg-purple-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         }
       ]
     },
@@ -389,17 +389,17 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           name: "adventure",
           link: "",
-          color: "bg-green-100 text-green-300 hover:bg-green-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         },
         {
           name: "star-wars",
           link: "",
-          color: "bg-purple-100 text-green-100 hover:bg-purple-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         },
         {
           name: "voyages",
           link: "",
-          color: "bg-purple-100 text-green-200 hover:bg-purple-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         }
       ]
     },
@@ -416,17 +416,17 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           name: "pop-music",
           link: "",
-          color: "bg-green-100 text-green-500 hover:bg-green-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         },
         {
           name: "adventure",
           link: "",
-          color: "bg-purple-100 text-purple-300 hover:bg-purple-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         },
         {
           name: "captivity",
           link: "",
-          color: "bg-purple-100 text-purple-500 hover:bg-purple-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         }
       ]
     },
@@ -443,17 +443,17 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           name: "web-fiction",
           link: "",
-          color: "bg-green-100 text-yellow-300 hover:bg-green-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         },
         {
           name: "wandering-inn",
           link: "",
-          color: "bg-purple-100 text-yellow-100 hover:bg-purple-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         },
         {
           name: "genre",
           link: "",
-          color: "bg-purple-100 text-yellow-500 hover:bg-purple-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         }
       ]
     },
@@ -470,17 +470,17 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           name: "pop-music",
           link: "",
-          color: "bg-green-100 text-red-500 hover:bg-green-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         },
         {
           name: "fandom",
           link: "",
-          color: "bg-purple-100 text-blue-300 hover:bg-purple-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         },
         {
           name: "sociology",
           link: "",
-          color: "bg-purple-100 text-blue-500 hover:bg-purple-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         }
       ]
     },
@@ -497,17 +497,17 @@ const Essays = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         {
           name: "pop-music",
           link: "",
-          color: "bg-green-100 text-red-500 hover:bg-green-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         },
         {
           name: "sociology",
           link: "",
-          color: "bg-purple-100 text-blue-500 hover:bg-purple-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         },
         {
           name: "genre",
           link: "",
-          color: "bg-purple-100 text-yellow-500 hover:bg-purple-500 hover:text-white"
+          color: "bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white"
         }
       ]
     },

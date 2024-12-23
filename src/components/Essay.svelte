@@ -15,7 +15,7 @@
     <p class="mb-2">
       "{description}"
     </p>
-    <p>Click to continue reading!</p>
+    <p>Click the image on the right to continue reading!</p>
     <div class="flex flex-wrap" id="tools">
       {#each tools as tool (tool.name)}
         <a href={tool.link} class={`px-2 py-1 mr-3 rounded hover:text-white ${tool.color}`}>{tool.name}</a>

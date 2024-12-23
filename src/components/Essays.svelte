@@ -10,9 +10,9 @@
     link="https://synthesizedsunsets.substack.com/p/will-science-fiction-ever-be-literary"
     image="/img/literary.jpg"
     tools={[
-      { name: 'science-fiction', link: '', color: 'bg-green-100 text-green-500 hover:bg-green-500 hover:text-white' },
-      { name: 'literary-fiction', link: '', color: 'bg-purple-100 text-orange-500 hover:bg-purple-500 hover:text-white' },
-      { name: 'genre', link: '', color: 'bg-purple-100 text-yellow-500 hover:bg-purple-500 hover:text-white' }
+      { name: 'science-fiction', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'literary-fiction', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'genre', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' }
     ]}
   />
   <Essay
@@ -21,9 +21,9 @@
     link="https://synthesizedsunsets.substack.com/p/in-caroline-m-yoachims-fragile-worlds"
     image="/img/yoachim.webp"
     tools={[
-      { name: 'caroline-m-yoachim', link: '', color: 'bg-green-100 text-purple-800 hover:bg-green-500 hover:text-white' },
-      { name: 'fantasy', link: '', color: 'bg-purple-100 text-purple-500 hover:bg-purple-500 hover:text-white' },
-      { name: 'motherhood', link: '', color: 'bg-purple-100 text-red-500 hover:bg-purple-500 hover:text-white' }
+      { name: 'caroline-m-yoachim', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'fantasy', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'motherhood', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' }
     ]}
   />
   <Essay
@@ -32,9 +32,9 @@
     link="https://synthesizedsunsets.substack.com/p/grand-nostalgia-and-the-temporal"
     image="/img/castle.webp"
     tools={[
-      { name: 'nostalgia', link: '', color: 'bg-green-100 text-purple-100 hover:bg-green-500 hover:text-white' },
-      { name: 'civilization', link: '', color: 'bg-purple-100 text-purple-600 hover:bg-purple-500 hover:text-white' },
-      { name: 'miyazaki', link: '', color: 'bg-purple-100 text-purple-700 hover:bg-purple-500 hover:text-white' }
+      { name: 'nostalgia', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'civilization', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'miyazaki', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' }
     ]}
   />
   <Essay
@@ -43,9 +43,9 @@
     link="https://synthesizedsunsets.substack.com/p/beaches-of-rebirth-and-memory"
     image="/img/beaches.jpg"
     tools={[
-      { name: 'memory', link: '', color: 'bg-green-100 text-purple-300 hover:bg-green-500 hover:text-white' },
-      { name: 'dreams', link: '', color: 'bg-purple-100 text-purple-400 hover:bg-purple-500 hover:text-white' },
-      { name: 'pokemon', link: '', color: 'bg-purple-100 text-purple-200 hover:bg-purple-500 hover:text-white' }
+      { name: 'memory', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'dreams', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'pokemon', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' }
     ]}
   />
   <Essay
@@ -54,9 +54,9 @@
     link="https://synthesizedsunsets.substack.com/p/ships-create-the-rhythm-of-adventure"
     image="/img/adventure.webp"
     tools={[
-      { name: 'adventure', link: '', color: 'bg-green-100 text-green-300 hover:bg-green-500 hover:text-white' },
-      { name: 'star-wars', link: '', color: 'bg-purple-100 text-green-100 hover:bg-purple-500 hover:text-white' },
-      { name: 'voyages', link: '', color: 'bg-purple-100 text-green-200 hover:bg-purple-500 hover:text-white' }
+      { name: 'adventure', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'star-wars', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'voyages', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' }
     ]}
   />
   <Essay 
@@ -65,9 +65,9 @@
     description="One of the best songs to come out of the pandemic years was 'The Princess and the Clock' by Kero Kero Bonito. It has the sound of a video game, the themes of early quarantine, and the lyrics of an ancient myth. This union of future, present, and past became the common thread for KKB’s compilation album Civilization. According to Kero Kero Bonito, the track 'is the tale of a young explorer who is kidnapped while sailing the world, imprisoned at the top of a tower and worshipped as royalty by an isolated society. Trapped in her chamber, she spends years dreaming of escaping, until one day she disappears.'."
     image="/img/princess.webp"
     tools={[
-      { name: 'pop-music', link: '', color: 'bg-green-100 text-green-500 hover:bg-green-500 hover:text-white' },
-      { name: 'adventure', link: '', color: 'bg-purple-100 text-purple-300 hover:bg-purple-500 hover:text-white' },
-      { name: 'captivity', link: '', color: 'bg-purple-100 text-purple-500 hover:bg-purple-500 hover:text-white' }
+      { name: 'pop-music', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'adventure', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'captivity', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' }
     ]}
   />
   <Essay
@@ -76,9 +76,9 @@
     link="https://synthesizedsunsets.substack.com/p/the-wandering-inn-allows-us-to-properly"
     image="/img/inn.webp"
     tools={[
-      { name: 'web-fiction', link: '', color: 'bg-green-100 text-yellow-300 hover:bg-green-500 hover:text-white' },
-      { name: 'wandering-inn', link: '', color: 'bg-purple-100 text-yellow-100 hover:bg-purple-500 hover:text-white' },
-      { name: 'genre', link: '', color: 'bg-purple-100 text-yellow-500 hover:bg-purple-500 hover:text-white' }
+      { name: 'web-fiction', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'wandering-inn', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'genre', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' }
     ]}
   />
   <Essay 
@@ -87,9 +87,9 @@
     description="Some artists have diehard fanbases that will always come out for them. This is true of certain Main Pop Girls like Taylor Swift, but it is also true of less popular artists who are thus able to punch above their weight. Even though Ed Sheeran is a fair bit more popular than Nicki Minaj, he still has more flop potential due to his more casual fanbase. You could say Sheeran’s fanbase is more fragile. Like Sheeran, Perry had a more fragile fanbase. And so after Witness, her house of cards came tumbling down. I’m not saying anything crazy here; artists with more dedicated fanbases are obviously going to have more success. But I’d like to raise a deeper question: why do some artists have a more dedicated fanbase? And what can artists do to cultivate that image?"
     image="/img/snowball.webp"
     tools={[
-      { name: 'pop-music', link: '', color: 'bg-green-100 text-red-500 hover:bg-green-500 hover:text-white' },
-      { name: 'fandom', link: '', color: 'bg-purple-100 text-blue-300 hover:bg-purple-500 hover:text-white' },
-      { name: 'sociology', link: '', color: 'bg-purple-100 text-blue-500 hover:bg-purple-500 hover:text-white' }
+      { name: 'pop-music', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'fandom', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'sociology', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' }
     ]}
   />
   <Essay 
@@ -98,9 +98,9 @@
     description="If you’ve paid close attention to Spotify genres, you might have noticed a genre called 'escape room'. There are other unfamiliar genres, like 'metropopolis', and 'chamber pop', but those at least call to mind a specific vibe. “Escape room' sounds completely nonsensical. This has spawned a number of think pieces about what this term means. These articles make valid points, but a true understanding of escape room requires us to throw out the conventional understanding of genre. Ultimately, the reason for this confusion is a very recent shift in the way genre is defined."
     image="/img/genre.webp"
     tools={[
-      { name: 'pop-music', link: '', color: 'bg-green-100 text-red-500 hover:bg-green-500 hover:text-white' },
-      { name: 'sociology', link: '', color: 'bg-purple-100 text-blue-500 hover:bg-purple-500 hover:text-white' },
-      { name: 'genre', link: '', color: 'bg-purple-100 text-yellow-500 hover:bg-purple-500 hover:text-white' }
+      { name: 'pop-music', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'sociology', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'genre', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' }
     ]}
   />
 </section>
