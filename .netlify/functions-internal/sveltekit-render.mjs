@@ -1,6 +1,6 @@
 import { init } from '../serverless.js';
 
-export const handler = init((() => {
+export default init((() => {
 function __memo(fn) {
 	let value;
 	return () => value ??= (value = fn());
@@ -9,10 +9,10 @@ function __memo(fn) {
 return {
 	appDir: "_app",
 	appPath: "_app",
-	assets: new Set(["files/UW Quizbowl - Old.html","files/resume.docx","files/resume.pdf","files/~$ly_2024_Resume.docx","files/~$resume.docx","icons/doc.svg","icons/docx.svg","icons/pdf.svg","icons/synthpop.svg","img/2013quizbowl.jpeg","img/adventure.webp","img/beaches.jpg","img/castle.webp","img/genre.webp","img/ibs.webp","img/inn.webp","img/literary.jpg","img/medium-site.png","img/mongodb-atlas.png","img/new-site.png","img/nostalgia.webp","img/old-site.png","img/paste-ee.png","img/popheads-chart.png","img/princess.webp","img/profile.jpeg","img/quizbowl-resources.png","img/reddit-chart.png","img/short-generator.png","img/snowball.webp","img/wandering-inn.png","img/yoachim.webp"]),
-	mimeTypes: {".html":"text/html",".docx":"application/vnd.openxmlformats-officedocument.wordprocessingml.document",".pdf":"application/pdf",".svg":"image/svg+xml",".jpeg":"image/jpeg",".webp":"image/webp",".jpg":"image/jpeg",".png":"image/png"},
+	assets: new Set([".DS_Store","files/UW Quizbowl - Old.html","files/resume.docx","files/resume.pdf","files/~$ly_2024_Resume.docx","icons/doc.svg","icons/docx.svg","icons/pdf.svg","icons/synthpop.svg","img/2013quizbowl.jpeg","img/adventure.webp","img/beaches.jpg","img/castle.webp","img/genre.webp","img/ibs.webp","img/inn.webp","img/literary.jpg","img/medium-site.png","img/mongodb-atlas.png","img/new-site.png","img/nostalgia.webp","img/old-site.png","img/paste-ee.png","img/popheads-chart.png","img/primer.jpg","img/princess.webp","img/profile.jpeg","img/quizbowl-resources.png","img/reddit-chart.png","img/short-generator.png","img/snowball.webp","img/wandering-inn.png","img/yoachim.webp"]),
+	mimeTypes: {".html":"text/html",".pdf":"application/pdf",".svg":"image/svg+xml",".jpeg":"image/jpeg",".webp":"image/webp",".jpg":"image/jpeg",".png":"image/png"},
 	_: {
-		client: {"start":"_app/immutable/entry/start.b1412722.js","app":"_app/immutable/entry/app.3bd7e72d.js","imports":["_app/immutable/entry/start.b1412722.js","_app/immutable/chunks/scheduler.63274e7e.js","_app/immutable/chunks/singletons.04d7bb8f.js","_app/immutable/entry/app.3bd7e72d.js","_app/immutable/chunks/scheduler.63274e7e.js","_app/immutable/chunks/index.45eb0a72.js"],"stylesheets":[],"fonts":[]},
+		client: {start:"_app/immutable/entry/start.BcCdBFTK.js",app:"_app/immutable/entry/app.C9YsjJYe.js",imports:["_app/immutable/entry/start.BcCdBFTK.js","_app/immutable/chunks/DOQjFBho.js","_app/immutable/chunks/BKDOZpSA.js","_app/immutable/chunks/wZTY17sZ.js","_app/immutable/entry/app.C9YsjJYe.js","_app/immutable/chunks/BKDOZpSA.js","_app/immutable/chunks/C9RFkn5e.js","_app/immutable/chunks/kq7p87s0.js","_app/immutable/chunks/wZTY17sZ.js","_app/immutable/chunks/syZgsCtV.js","_app/immutable/chunks/C8RT1_sr.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
 			__memo(() => import('../server/nodes/0.js')),
 			__memo(() => import('../server/nodes/1.js')),
@@ -21,6 +21,9 @@ return {
 			__memo(() => import('../server/nodes/4.js')),
 			__memo(() => import('../server/nodes/5.js'))
 		],
+		remotes: {
+			
+		},
 		routes: [
 			{
 				id: "/",
@@ -51,10 +54,18 @@ return {
 				endpoint: null
 			}
 		],
+		prerendered_routes: new Set([]),
 		matchers: async () => {
 			
 			return {  };
-		}
+		},
+		server_assets: {}
 	}
 }
 })());
+
+export const config = {
+	path: "/*",
+	excludedPath: "/.netlify/*",
+	preferStatic: true
+};

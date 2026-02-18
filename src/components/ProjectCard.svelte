@@ -1,45 +1,70 @@
-<script lang='ts'>
-  import type { Tool } from '../types/Tool';
+<script lang="ts">
+  export let detailsHref: string;
+
   export let title: string;
   export let description: string;
   export let imageLink: string;
   export let projectLink: string;
   export let repoLink: string;
   export let makingOfLink: string;
-  export let tools: Tool[] = [];
+  export let tools: { name: string; link: string; color: string }[];
 </script>
 
-<div class="relative border border-blue-200 ml-8 mr-8 mb-1 p-4 rounded transform transition-all duration-200 hover:z-51 hover:scale-105 hover:shadow-lg flex flex-col md:flex-row justify-between items-center">
-  <div class="w-full md:w-2/3">
-    <h2 class="text-lg mb-2">
-      {title}
-    </h2>
-    <p>
-      {description}
-    </p>
-    <div class="flex flex-wrap" id="tools">
-      {#each tools as tool (tool.name)}
-        <a href={tool.link} class={`px-2 py-1 mr-3 rounded hover:text-white ${tool.color}`}>{tool.name}</a>
-      {/each}
+<article class="relative rounded-xl border p-4 hover:shadow-md transition">
+  <!-- The “whole card” link overlay -->
+  <a
+    href={detailsHref}
+    aria-label={`Open ${title}`}
+    class="absolute inset-0 z-0"
+  />
+
+  <!-- Actual content sits above the overlay -->
+  <div class="relative z-10 flex gap-4">
+    <img src={imageLink} alt={title} class="w-40 h-24 object-cover rounded-lg" />
+
+    <div class="flex-1">
+      <h3 class="text-xl font-semibold">{title}</h3>
+      <p class="text-sm opacity-80 mt-1">{description}</p>
+
+      <div class="mt-3 flex flex-wrap gap-2">
+        <a
+          class="text-sm px-3 py-1 rounded-full border hover:bg-gray-100"
+          href={projectLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Live
+        </a>
+
+        <a
+          class="text-sm px-3 py-1 rounded-full border hover:bg-gray-100"
+          href={repoLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Repo
+        </a>
+
+        <a
+          class="text-sm px-3 py-1 rounded-full border hover:bg-gray-100"
+          href={makingOfLink}
+        >
+          Making of
+        </a>
+      </div>
+
+      <div class="mt-3 flex flex-wrap gap-2">
+        {#each tools as tool}
+          <a
+            class={"text-xs px-2 py-1 rounded-full transition " + tool.color}
+            href={tool.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {tool.name}
+          </a>
+        {/each}
+      </div>
     </div>
   </div>
-  <div class="relative w-full md:w-1/3 mt-4 md:mt-0 md:ml-4">
-    <a href={projectLink}>
-      <img src={imageLink} alt={title} class="rounded-lg w-full h-auto transition-opacity duration-200 hover:opacity-50">
-    </a>
-    <div class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-200 space-y-4">
-      <a on:click|stopPropagation={onclick} href={repoLink} class="px-4 py-2 flex items-center space-x-2 bg-gray-800 text-white rounded">
-        <i class="fa fa-github"></i>
-        <span>Github</span>
-      </a>
-      <a on:click|stopPropagation={onclick} href={projectLink} class="px-4 py-2 flex items-center space-x-2 bg-green-500 text-white rounded">
-        <i class="fa fa-link"></i>
-        <span>Project</span>
-      </a>
-      <a on:click|stopPropagation={onclick} href={makingOfLink} class="px-4 py-2 flex items-center space-x-2 bg-yellow-500 text-white rounded">
-        <i class="fa fa-pencil"></i>
-        <span>Making Of</span>
-      </a>
-    </div>
-  </div>
-</div>
+</article>

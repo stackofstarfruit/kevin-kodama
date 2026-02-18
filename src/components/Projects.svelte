@@ -1,5 +1,6 @@
 <script lang='ts'>
   import ProjectCard from './ProjectCard.svelte'
+
   const popheadsChart = {
     title: 'Popheads Chart',
     description: 'A fullstack web application that scrapes music listening data from the Popheads subreddit.',
@@ -52,8 +53,8 @@
 
 <h2 id="projects" class="text-3xl px-4 mt-10 text-center">Projects</h2>
 <section id="gallery" class="px-4 py-8 space-y-4">
-  <a href="/popheads-chart">
-  <ProjectCard 
+  <ProjectCard
+    detailsHref="/popheads-chart"
     title={popheadsChart.title}
     description={popheadsChart.description}
     imageLink={popheadsChart.imageLink}
@@ -61,10 +62,10 @@
     repoLink={popheadsChart.repoLink}
     makingOfLink={popheadsChart.makingOfLink}
     tools={popheadsChart.tools}
-  /></a>
+  />
 
-  <a href="/quizbowl-website">
-  <ProjectCard 
+  <ProjectCard
+    detailsHref="/quizbowl-website"
     title={quizbowlWebsite.title}
     description={quizbowlWebsite.description}
     imageLink={quizbowlWebsite.imageLink}
@@ -72,10 +73,10 @@
     repoLink={quizbowlWebsite.repoLink}
     makingOfLink={quizbowlWebsite.makingOfLink}
     tools={quizbowlWebsite.tools}
-  /></a>
+  />
 
-  <a href="/wandering-inn">
-  <ProjectCard 
+  <ProjectCard
+    detailsHref="/wandering-inn"
     title={wanderingInn.title}
     description={wanderingInn.description}
     imageLink={wanderingInn.imageLink}
@@ -83,5 +84,5 @@
     repoLink={wanderingInn.repoLink}
     makingOfLink={wanderingInn.makingOfLink}
     tools={wanderingInn.tools}
-  /></a>
+  />
 </section>
