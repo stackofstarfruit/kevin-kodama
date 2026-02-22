@@ -15,7 +15,7 @@
     <li><a href="/" class="text-blue-600 hover:text-blue-700">Home</a></li>
     <li><a href="#projects" class="text-blue-600 hover:text-blue-700">Projects</a></li>
     <li><a href="#synthesized-sunsets" class="text-blue-600 hover:text-blue-700">Synthesized Sunsets</a></li>
-    <li><a href="#other-essays" class="text-blue-600 hover:text-blue-700">Other Essays</a></li>
+    <li><a href="#other-essays" class="text-blue-600 hover:text-blue-700">Synthpop</a></li>
   </ul>
 </nav>
 

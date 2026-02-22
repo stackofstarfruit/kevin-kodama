@@ -70,14 +70,14 @@ function ProjectCard($$renderer, $$props) {
   let projectLink = $$props["projectLink"];
   let repoLink = $$props["repoLink"];
   let makingOfLink = $$props["makingOfLink"];
-  let tools = $$props["tools"];
-  $$renderer.push(`<article class="relative rounded-xl border p-4 hover:shadow-md transition"><a${attr("href", detailsHref)}${attr("aria-label", `Open ${title}`)} class="absolute inset-0 z-0"></a> <div class="relative z-10 flex gap-4"><img${attr("src", imageLink)}${attr("alt", title)} class="w-40 h-24 object-cover rounded-lg"/> <div class="flex-1"><h3 class="text-xl font-semibold">${escape_html(title)}</h3> <p class="text-sm opacity-80 mt-1">${escape_html(description)}</p> <div class="mt-3 flex flex-wrap gap-2"><a class="text-sm px-3 py-1 rounded-full border hover:bg-gray-100"${attr("href", projectLink)} target="_blank" rel="noopener noreferrer">Live</a> <a class="text-sm px-3 py-1 rounded-full border hover:bg-gray-100"${attr("href", repoLink)} target="_blank" rel="noopener noreferrer">Repo</a> <a class="text-sm px-3 py-1 rounded-full border hover:bg-gray-100"${attr("href", makingOfLink)}>Making of</a></div> <div class="mt-3 flex flex-wrap gap-2"><!--[-->`);
+  let tools = fallback($$props["tools"], () => [], true);
+  $$renderer.push(`<div class="relative border border-blue-200 ml-8 mr-8 mb-1 p-4 rounded transform transition-all duration-200 hover:z-50 hover:scale-105 hover:shadow-lg flex flex-col md:flex-row justify-between items-center"><a${attr("href", detailsHref)}${attr("aria-label", `Open ${title}`)} class="absolute inset-0 z-0"></a> <div class="relative z-10 w-full md:w-2/3"><h2 class="text-lg mb-2">${escape_html(title)}</h2> <p>${escape_html(description)}</p> <div class="flex flex-wrap" id="tools"><!--[-->`);
   const each_array = ensure_array_like(tools);
   for (let $$index = 0, $$length = each_array.length; $$index < $$length; $$index++) {
     let tool = each_array[$$index];
-    $$renderer.push(`<a${attr_class("text-xs px-2 py-1 rounded-full transition " + tool.color)}${attr("href", tool.link)} target="_blank" rel="noopener noreferrer">${escape_html(tool.name)}</a>`);
+    $$renderer.push(`<a${attr("href", tool.link)} target="_blank" rel="noopener noreferrer"${attr_class(`px-2 py-1 mr-3 rounded hover:text-white ${tool.color} relative z-20`)}>${escape_html(tool.name)}</a>`);
   }
-  $$renderer.push(`<!--]--></div></div></div></article>`);
+  $$renderer.push(`<!--]--></div></div> <div class="relative z-10 w-full md:w-1/3 mt-4 md:mt-0 md:ml-4 group"><a${attr("href", projectLink)} target="_blank" rel="noopener noreferrer" class="relative z-20 block"><img${attr("src", imageLink)}${attr("alt", title)} class="rounded-lg w-full h-auto transition-opacity duration-200 group-hover:opacity-50"/></a> <div class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-200 space-y-4"><a${attr("href", repoLink)} target="_blank" rel="noopener noreferrer" class="px-4 py-2 flex items-center space-x-2 bg-gray-800 text-white rounded pointer-events-auto relative z-30"><i class="fa fa-github"></i> <span>Github</span></a> <a${attr("href", projectLink)} target="_blank" rel="noopener noreferrer" class="px-4 py-2 flex items-center space-x-2 bg-green-500 text-white rounded pointer-events-auto relative z-30"><i class="fa fa-link"></i> <span>Project</span></a> <a${attr("href", makingOfLink)} class="px-4 py-2 flex items-center space-x-2 bg-yellow-500 text-white rounded pointer-events-auto relative z-30"><i class="fa fa-pencil"></i> <span>Making Of</span></a></div></div></div>`);
   bind_props($$props, {
     detailsHref,
     title,

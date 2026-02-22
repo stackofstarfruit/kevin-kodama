@@ -28,12 +28,17 @@ function _page($$renderer, $$props) {
         $$renderer4.push(`<title>Quizbowl Website</title>`);
       });
     });
-    $$renderer2.push(`<body class="bg-blue-50 text-blue-900 p-6"><h1 class="text-4xl px-4 mt-10 mb-10" id="quizbowl-header">Quizbowl Website (Winter 2020 - Spring 2023)</h1> `);
+    $$renderer2.push(`<main class="bg-blue-50 text-blue-900 p-6"><h1 class="text-4xl px-4 mt-10 mb-10" id="quizbowl-header">Quizbowl Website (Winter 2020 - Spring 2023)</h1> `);
     {
       $$renderer2.push("<!--[-->");
       $$renderer2.push(`<div id="new-site-loading" class="border-solid border-black border-2 w-5/6 h-96 my-8 mx-auto flex items-center justify-center"><p class="text-3xl text-center">LOADING PROJECT...</p></div>`);
     }
-    $$renderer2.push(`<!--]--> <article class="text-lg font-medium text-gray-700"><p class="mb-6">From 2020 to 2023, I was the webmaster and sometimes-president of quizbowl at the University of Washington. Quizbowl is a fast-paced academic competition centered around the quick recall of facts. However, the supply of centralized quizbowl resources is limited. I hoped to address this by creating a club website that collected not just club-specific resources, but also resources applicable to all of quizbowl. Below is a timeline of how the website came to be. While not all of this information is technical, I hope it will shed some light on my development process.</p> `);
+    $$renderer2.push(`<!--]--> <article class="text-lg font-medium text-gray-700"><p class="mb-6">From 2020 to 2023, I was the webmaster and sometimes-president of quizbowl at the University of
+      Washington. Quizbowl is a fast-paced academic competition centered around the quick recall of facts.
+      However, the supply of centralized quizbowl resources is limited. I hoped to address this by creating a
+      club website that collected not just club-specific resources, but also resources applicable to all of
+      quizbowl. Below is a timeline of how the website came to be. While not all of this information is
+      technical, I hope it will shed some light on my development process.</p> `);
     TableOfContents($$renderer2);
     $$renderer2.push(`<!----> `);
     SiteBeginnings($$renderer2);
@@ -47,7 +52,7 @@ function _page($$renderer, $$props) {
     ReactiveCSSFeatures($$renderer2);
     $$renderer2.push(`<!----> `);
     Conclusion($$renderer2);
-    $$renderer2.push(`<!----></article></body>`);
+    $$renderer2.push(`<!----></article></main>`);
   });
 }
 export {
