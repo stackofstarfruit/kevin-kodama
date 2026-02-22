@@ -5,6 +5,28 @@
 <h2 id="synthesized-sunsets" class="text-3xl px-4 mt-10 text-center">Synthesized Sunsets</h2>
 <section class="px-4 py-8 space-y-4">
   <EssayCard
+    title="‘17776’ by Jon Bois and the Slow Cancellation of the Future" 
+    description="On a hot summer day in 2017, I was killing time at the airport when I stumbled across a mysterious Facebook link simply titled '17776'. Before long, I was downloading as many webpages from the site as I could. Because '17776' had already become the most exciting story I had ever read. I did not want to board that plane."
+    link="https://synthesizedsunsets.substack.com/p/17776-by-jon-bois-and-the-slow-cancellation"
+    image="/img/17776.webp"
+    tools={[
+      { name: 'science-fiction', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'literary-fiction', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'genre', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' }
+    ]}
+  />
+  <EssayCard
+    title="How 'Chinese Goodreads' Illuminates Fading Sci-Fi Classics"
+    description="Lately I have been reflecting on what happens when a culture imports a foreign work of art. In most cases, the goal of both translator and curator is for the work to strike a similar chord as it did in its original culture. Sometimes it does indeed have the same type of impact that it did in its home country; other times the import will totally flop. But in rare cases, the work will do better in a foreign context than it did originally."
+    link="https://synthesizedsunsets.substack.com/p/how-chinese-goodreads-illuminates"
+    image="/img/china.webp"
+    tools={[
+      { name: 'science-fiction', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'literary-fiction', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
+      { name: 'genre', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' }
+    ]}
+  />
+  <EssayCard
     title="Will Science Fiction Ever Be Literary?"
     description="In the world of literature, genres constantly rise, fall, divide, and recombine. But two broad categories of books always maintain their relevance: genre fiction and literary fiction. These broad categories are determined not by aesthetics, but by goals. Genre fiction is by far the more popular of the two, and its primary goal is to entertain. While the “genre fiction” label technically applies to any book that fits into one of those shelves at the bookstore (e.g. “Mystery”, “Fantasy”), in practice the label implies that a book is escapist. Its goal is to turn the reader’s attention away from the world by giving their mind somewhere else to live for a while."
     link="https://synthesizedsunsets.substack.com/p/will-science-fiction-ever-be-literary"

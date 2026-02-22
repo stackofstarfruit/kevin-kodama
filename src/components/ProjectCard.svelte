@@ -16,7 +16,7 @@
     href={detailsHref}
     aria-label={`Open ${title}`}
     class="absolute inset-0 z-0"
-  />
+  ></a>
 
   <!-- Actual content sits above the overlay -->
   <div class="relative z-10 flex gap-4">

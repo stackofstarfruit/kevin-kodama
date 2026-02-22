@@ -2,19 +2,8 @@
   import EssayCard from './EssayCard.svelte'
 </script>
 
-<h2 id="other-essays" class="text-3xl px-4 mt-10 text-center">Other Essays</h2>
+<h2 id="other-essays" class="text-3xl px-4 mt-10 text-center">Synthpop</h2>
 <section class="px-4 py-8 space-y-4">
-  <EssayCard
-    title="IBS: How Capitalism Cooked Up a Whole New Disease (Part 1 of 2)"
-    link="https://kevinkodama.substack.com/p/ibs-how-capitalism-cooked-up-a-whole"
-    description="As America became wealthier, companies realized that it wasn’t enough to sell goods that people needed. They also needed to create that need. When it came to food, this was no easy task. After all, people had been eating similar diets for hundreds of years, and this had been working out well for them. The solution to this problem was selling not just a food product but an entire lifestyle. Will Kellogg was the first to take advantage of this strategy. Kellogg’s brother John, a famous physician who pioneered the science of wellness, was obsessed with the idea of “biologic living”, or the idea that scientific optimization could radically alter the human condition for the better. While many of John Kellogg’s ideas feel eccentric now, the essence of his lifestyle is alive and well. Will’s genius was realizing the potential of selling his brother’s science of nutrition with the science of marketing."
-    image="/img/ibs.webp"
-    tools={[
-      { name: 'sociology', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
-      { name: 'capitalism', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' },
-      { name: 'biology', link: '', color: 'bg-blue-100 text-blue-500 hover:bg-blue-500 hover:text-white' }
-    ]}
-  />
   <EssayCard 
     title="Was 'Radical Optimism' a Flop?"
     link="https://synthpop.substack.com/p/was-radical-optimism-a-flop"
